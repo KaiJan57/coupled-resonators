@@ -101,7 +101,7 @@ pmap(jj -> pmap(kk -> calc(jj,kk), 1:y_vec_length), 1:x_vec_length)
 z_mat = amplitude_alpha_N
 #println(amplitude_alpha_N)
 #pcolor(x_vec, y_vec, z_mat, cmap="inferno")
-plt = plot(x_vec, y_vec, z_mat, st=:surface)
+plt = plot(x_vec, y_vec, z_mat, yaxis=:log, st=:surface)
 savefig(plt, "plt-3d-test")
 display(plt)
 println("Key")
